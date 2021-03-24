@@ -14,7 +14,6 @@ a.nav:link, a.nav:visited {
   color: white;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
 }
 
 a.nav:hover, a.nav:active {
