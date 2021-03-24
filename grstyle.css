@@ -3,6 +3,10 @@ body{
 	background-color: CFDEDE;
 }
 
+nav{
+	width: 50%
+}
+
 a.nav:link, a.nav:visited {
   background-color: 264653;
   color: white;
