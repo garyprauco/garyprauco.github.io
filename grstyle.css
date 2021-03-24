@@ -3,7 +3,7 @@ body{
 	background-color: CFDEDE;
 }
 
-a:link, a:visited {
+a.nav:link, a.nav:visited {
   background-color: #FFEFBD;
   color: 2A2D34;
   padding: 14px 25px;
@@ -12,6 +12,6 @@ a:link, a:visited {
   display: inline-block;
 }
 
-a:hover, a:active {
+a.nav:hover, a.nav:active {
   background-color: F07167;
 }
