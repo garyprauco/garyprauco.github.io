@@ -4,8 +4,8 @@ body{
 }
 
 a.nav:link, a.nav:visited {
-  background-color: #FFEFBD;
-  color: 2A2D34;
+  background-color: 264653;
+  color: white;
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
