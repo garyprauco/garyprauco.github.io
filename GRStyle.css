@@ -6,6 +6,6 @@ body {
 
 ul.nav li {
 	list-style-type: none;
-	display: inline;
+	display: block;
 	float: left;
 }
