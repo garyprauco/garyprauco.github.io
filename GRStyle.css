@@ -12,7 +12,7 @@ ul.nav {
   	background-color: #203A46;
 }
 
-li.nav {
+li.nav a {
 	float: left;
 	display: block;
   	color: white;
