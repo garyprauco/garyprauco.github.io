@@ -5,8 +5,9 @@ body {
 }
 
 ul.nav {
-	list-style-type: none;
-	display: inline;
-	float: left;
 	background-color: #203A46;
+}
+
+li.nav {
+	display: inline
 }
