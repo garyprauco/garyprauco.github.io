@@ -4,6 +4,10 @@ body {
 	margin: 0;
 }
 
+li.nav {
+  float: left;
+}
+
 ul.nav {
 	list-style-type: none;
   	margin: 0;
