@@ -5,9 +5,18 @@ body {
 }
 
 ul.nav {
-	background-color: #203A46;
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	background-color: #203A46;
 }
 
 li.nav {
-	display: inline
+	float: left;
+	display: block;
+  	color: white;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
 }
