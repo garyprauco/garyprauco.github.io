@@ -5,6 +5,7 @@ body {
 }
 
 ul.nav li {
+	list-style-type: none;
 	display: inline;
 	float: left;
 	width: 100%;
