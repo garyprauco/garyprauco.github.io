@@ -6,5 +6,6 @@ body {
 
 ul.nav li {
 	display: inline;
+	float: left;
 	width: 100%;
 }
