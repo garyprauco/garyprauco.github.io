@@ -4,10 +4,7 @@ body {
 	margin: 0;
 }
 
-header {
-	width: 100%;
-}
-
 ul.nav li {
-	display: inline;	
+	display: inline;
+	width: 100%;
 }
