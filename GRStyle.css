@@ -4,7 +4,7 @@ body {
 	margin: 0;
 }
 
-ul.nav li {
+ul.nav {
 	list-style-type: none;
 	display: inline;
 	float: left;
