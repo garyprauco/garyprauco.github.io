@@ -6,6 +6,7 @@ body {
 
 ul.nav li {
 	list-style-type: none;
-	display: block;
+	display: inline;
 	float: left;
+	background-color: #203A46;
 }
