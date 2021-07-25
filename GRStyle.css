@@ -10,8 +10,8 @@ li.nav {
 
 ul.nav {
 	list-style-type: none;
-	margin: 0;
-	padding-bottom: 50px;
+	margin-bottom: 50px;
+	padding: 0;
   	overflow: hidden;
   	background-color: #273469;
 	position: fixed;
