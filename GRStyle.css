@@ -30,5 +30,6 @@ li.nav a:hover {
 }
 
 .container{
+	float: center;
 	margin-top: 50px;
 }
