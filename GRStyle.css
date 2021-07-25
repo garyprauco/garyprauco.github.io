@@ -1,5 +1,5 @@
 body {
-	background-color: #F1F7F9;
+	background-color: #30343F;
 	font-family: Helvetica;
 	margin: 0;
 }
@@ -13,7 +13,7 @@ ul.nav {
 	margin: 0;
 	padding: 0;
   	overflow: hidden;
-  	background-color: #203A46;
+  	background-color: #273469;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -26,5 +26,5 @@ li.nav a {
   	text-decoration: none;
 }
 li.nav a:hover {
-  background-color: #F07167;
+  background-color: #4C63BD;
 }
