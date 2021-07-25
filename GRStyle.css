@@ -30,6 +30,6 @@ li.nav a:hover {
 }
 
 .container{
-	float: center;
+	justify-content: center;
 	margin-top: 50px;
 }
