@@ -6,7 +6,6 @@ body {
 
 li.nav {
 	float: left;
-	margin-top: 50px;
 }
 
 ul.nav {
@@ -28,4 +27,8 @@ li.nav a {
 }
 li.nav a:hover {
   background-color: #4C63BD;
+}
+
+.container{
+	margin-top: 50px;
 }
