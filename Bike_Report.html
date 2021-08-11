@@ -5142,9 +5142,9 @@ z-index: 2;
 padding: 1.25rem 1rem;
 }
 .alert-primary {
-color: #8c3213;
-background-color: #fbddd2;
-border-color: #f8ccbc;
+color: #4E65BC;
+background-color: #E1E5F4;
+border-color: #D2D8EE;
 }
 .alert-primary .alert-link {
 color: #70280f;
@@ -10735,7 +10735,7 @@ After a year and a half of global pandemic, and not being able to visit any gym,
 <li><a href="https://www.kaggle.com/heeraldedhia/bike-buyers" class="uri">https://www.kaggle.com/heeraldedhia/bike-buyers</a></li>
 </ul>
 <p>Before we begin any analysis, we have to format our data, and even before that we have to tell R what packages we will be using.</p>
-<pre class="r alert alert-dismissible alert-info"><code>library(tidyverse)
+<pre class="r alert-primary"><code>library(tidyverse)
 library(gridExtra)
 library(knitr)
 library(kableExtra)
@@ -10743,17 +10743,17 @@ library(ggthemes)
 library(stargazer)
 library(mosaicData)</code></pre>
 <p>To make our lives easier down the road, we will also include this custom MakeTable() function in order to output some nice looking tables!</p>
-<pre class="r alert alert-dismissible alert-info"><code>MakeTable &lt;- function(df){
+<pre class="r alert-primary"><code>MakeTable &lt;- function(df){
   kable(df,&#39;html&#39;,booktabs=TRUE) %&gt;%
     kable_styling(bootstrap_options = c(&quot;hover&quot;,&quot;responsive&quot;),
                   font_size = 12)
 }</code></pre>
 <p>We finally can now load our dataset into R.</p>
-<pre class="r alert alert-dismissible alert-info"><code>BikeBuyers &lt;- read.csv(&#39;C:/Users/garyp/OneDrive/Case Studies/Bike_Report_files/bike_buyers.csv&#39;,
+<pre class="r alert-primary"><code>BikeBuyers &lt;- read.csv(&#39;C:/Users/garyp/OneDrive/Case Studies/Bike_Report_files/bike_buyers.csv&#39;,
                        fileEncoding=&#39;UTF-8-BOM&#39;)
 BikeBuyers &lt;- na.omit(BikeBuyers)</code></pre>
 <div style="page-break-after: always;"></div>
-<pre class="r alert alert-dismissible alert-info"><code>MakeTable(head(BikeBuyers))</code></pre>
+<pre class="r alert-primary"><code>MakeTable(head(BikeBuyers))</code></pre>
 <table class="table table-hover table-responsive" style="font-size: 12px; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -11046,7 +11046,7 @@ No
 </tr>
 </tbody>
 </table>
-<pre class="r alert alert-dismissible alert-info"><code>MakeTable(summary(BikeBuyers))</code></pre>
+<pre class="r alert-primary"><code>MakeTable(summary(BikeBuyers))</code></pre>
 <table class="table table-hover table-responsive" style="font-size: 12px; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -11359,7 +11359,7 @@ We can see from here that some additional formatting needs to be done to get an 
 We also will take the extra step of using factor() to correctly order our levels for Education and Commute Distance, in an order that makes sense.
 
 <p>We can see most of our dataset variables are categorical. There are only a handful missing (NA) values, so we can reasonably remove these to move forward with initial exploration.</p>
-<pre class="r alert alert-dismissible alert-info"><code>MakeTable(summary(BikeBuyers))</code></pre>
+<pre class="r alert-primary"><code>MakeTable(summary(BikeBuyers))</code></pre>
 <table class="table table-hover table-responsive" style="font-size: 12px; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -11667,7 +11667,7 @@ NA
 </tr>
 </tbody>
 </table>
-<pre class="r alert alert-dismissible alert-info"><code>RegionTable &lt;-
+<pre class="r alert-primary"><code>RegionTable &lt;-
   BikeBuyers %&gt;%
   group_by(Region) %&gt;%
     summarize(Count=n(),Percent=n()/dim(BikeBuyers)[1])</code></pre>
@@ -11686,12 +11686,12 @@ NA
 
 
 <p>We want to determine what variables affect a persons decision to purchase a bicycle. Since our response variable is a simple Yes/No outcome, it makes sense to use logistic regression! We identified: * Age * Region * Education * Commute Distance As having some type of a trend so lets start with these.</p>
-<pre class="r alert alert-dismissible alert-info"><code>BikeReg &lt;- glm(Purchased.Bike~Age+Region+Education+Commute.Distance,
+<pre class="r alert-primary"><code>BikeReg &lt;- glm(Purchased.Bike~Age+Region+Education+Commute.Distance,
                family=&#39;binomial&#39;,
                data=BikeBuyers)</code></pre>
 
 <p>We should take our coefficients and convert them to a more readable format, since our regression table shows our coefficients as log odds, instead of odds, which we can easily convert.</p>
-<pre class="r alert alert-dismissible alert-info"><code>MakeTable(exp(BikeReg$coefficients))</code></pre>
+<pre class="r alert-primary"><code>MakeTable(exp(BikeReg$coefficients))</code></pre>
 <table class="table table-hover table-responsive" style="font-size: 12px; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
