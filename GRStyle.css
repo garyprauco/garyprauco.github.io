@@ -65,11 +65,12 @@ li.nav a:hover {background-color: #4C63BD;
     text-align:center;
     margin-bottom:20px;
     font-size:larger;
-    height:50%;
-    width:100%;
+    font-size: 1vh;
+    font-size: 1vw;
 }
 .title a {color:black}
 .case_body {text-align:left;
     font-size:normal;
-    height:50%;
-    width:100%;}
+    font-size: 1vh;
+    font-size: 1vw;
+}
