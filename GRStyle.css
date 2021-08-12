@@ -47,7 +47,7 @@ li.nav a:hover {background-color: #4C63BD;
 }
 .case_cont_left {
     width:22%;
-    height:300px;
+    height:100%;
     margin-top:80px;
     margin-left:80px;
     margin-right:20px;
@@ -55,7 +55,7 @@ li.nav a:hover {background-color: #4C63BD;
 }
 .case_cont_right {
     width:22%;
-    height:300px;
+    height:100%px;
     margin-top:80px;
     margin-left:20px;
     margin-right:80px;
