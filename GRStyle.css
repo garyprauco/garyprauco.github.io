@@ -34,6 +34,16 @@ li.nav a {display:block;
 li.nav a:hover {background-color: #4C63BD;
     font-weight:bold;
 }
+.main_cont{
+    display: flex;
+    justify-content: center;
+    padding: 5%; 
+    width: 80%; 
+}
+.cont_left, .cont_right {
+    padding: 2%
+}
+
 .container{margin-top:10px;
     display:flex;
     width:100%;
@@ -46,7 +56,11 @@ li.nav a:hover {background-color: #4C63BD;
     margin:0;
     padding:0;
 }
-.img_fill {
+.img_fill{
+    height:30vmax;
+    border:2px solid #273469
+}
+.case_img {
     height:100%;
     width:100%;
     border:2px solid #273469
