@@ -11689,7 +11689,172 @@ NA
 <pre class="r alert-primary"><code>BikeReg &lt;- glm(Purchased.Bike~Age+Region+Education+Commute.Distance,
                family=&#39;binomial&#39;,
                data=BikeBuyers)</code></pre>
-
+<table style="text-align:center">
+<tr>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+<em>Dependent variable:</em>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td colspan="1" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+Purchased.Bike
+</td>
+</tr>
+<tr>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Age
+</td>
+<td>
+-0.016<sup>***</sup> (0.006)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+RegionNorth America
+</td>
+<td>
+-0.165 (0.169)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+RegionPacific
+</td>
+<td>
+0.607<sup>***</sup> (0.216)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+EducationHigh School
+</td>
+<td>
+0.849<sup>***</sup> (0.316)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+EducationPartial College
+</td>
+<td>
+0.794<sup>***</sup> (0.301)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+EducationBachelors
+</td>
+<td>
+1.180<sup>***</sup> (0.304)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+EducationGraduate Degree
+</td>
+<td>
+1.176<sup>***</sup> (0.324)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Commute.Distance1-2 Miles
+</td>
+<td>
+-0.141 (0.207)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Commute.Distance2-5 Miles
+</td>
+<td>
+0.206 (0.204)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Commute.Distance5-10 Miles
+</td>
+<td>
+-0.527<sup>**</sup> (0.218)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Commute.Distance10+ Miles
+</td>
+<td>
+-1.064<sup>***</sup> (0.262)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Constant
+</td>
+<td>
+-0.150 (0.374)
+</td>
+</tr>
+<tr>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Observations
+</td>
+<td>
+971
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Log Likelihood
+</td>
+<td>
+-631.448
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Akaike Inf. Crit.
+</td>
+<td>
+1,286.896
+</td>
+</tr>
+<tr>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+<em>Note:</em>
+</td>
+<td style="text-align:right">
+<sup><em></sup>p&lt;0.1; <sup><strong></sup>p&lt;0.05; <sup></strong></em></sup>p&lt;0.01
+</td>
+</tr>
+</table>
 <p>We should take our coefficients and convert them to a more readable format, since our regression table shows our coefficients as log odds, instead of odds, which we can easily convert.</p>
 <pre class="r alert-primary"><code>MakeTable(exp(BikeReg$coefficients))</code></pre>
 <table class="table table-hover table-responsive" style="font-size: 12px; margin-left: auto; margin-right: auto;">
