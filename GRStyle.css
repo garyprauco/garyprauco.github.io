@@ -47,7 +47,7 @@ li.nav a:hover {background-color: #4C63BD;
 
 .container{display:flex;
     width:100vw;
-    height:92vh;
+    height:94vh;
     flex-direction:column;
     overflow:hidden;
 }
